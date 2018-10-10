@@ -1,0 +1,16 @@
+type User {
+  id: ID! @unique
+  firstName: String!
+  lastName: String!
+}
+
+type Product {
+  id: ID! @unique
+  name: String!
+  brand: Brand!
+}
+
+type Brand {
+  id: ID! @unique
+  name: String!  
+}

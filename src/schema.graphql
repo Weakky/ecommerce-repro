@@ -1,0 +1,11 @@
+# import User, UserConnection, ProductConnection from "./generated/prisma.graphql"
+scalar DateTime
+
+type Query {
+  users(firstName: String!, lastName: String!): UserConnection!
+  products: ProductConnection!
+}
+
+type Mutation {
+  createUser(firstName: String!, lastName: String!): User
+}
